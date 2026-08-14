@@ -1,0 +1,388 @@
+html{
+    background-color: black;
+    color: white;
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+body{
+   font-family: 'Cormorant Garamond';
+   max-width: 600px;
+   padding: 30px;
+   /* border: 5px solid white; */
+   display: flex;
+   flex-direction: column;   
+   justify-content: center;
+   align-items: center;
+   border-radius: 30px;
+}
+button{
+    font-family: 'Cormorant Garamond';
+    cursor: pointer;
+}
+h1, h2{
+    font-family: 'Great Vibes';
+    letter-spacing: 2px;
+    text-align: center;
+    color: rgb(253, 44, 44);
+    font-size: 2rem;
+}
+
+/* image qui flotent */
+.flottant {
+    position: fixed;
+    animation: flotter 4s infinite ease-in-out alternate;
+    z-index: -1; 
+    left: 50%; 
+    bottom: 50%; 
+    animation-delay: 0s;
+}
+.flottant1 {
+    position: fixed;
+    animation: flotter 4s infinite ease-in-out alternate;
+    z-index: -1; 
+    left: 90%; 
+    bottom: 10%; 
+    animation-delay: 0s;
+}
+.flottant2 {
+    position: fixed;
+    animation: flotter 4s infinite ease-in-out alternate;
+    z-index: -1; 
+    left: 80%; 
+    bottom: 80%; 
+    animation-delay: 0s;
+}
+.flottant3 {
+    position: fixed;
+    animation: flotter 4s infinite ease-in-out alternate;
+    z-index: -1; 
+    left: 70%; 
+    bottom: 50%; 
+    animation-delay: 0s;
+}
+.flottant4 {
+    position: fixed;
+    animation: flotter 4s infinite ease-in-out alternate;
+    z-index: -1; 
+    left: 60%; 
+    bottom: 30%; 
+    animation-delay: 0s;
+}
+.flottant5 {
+    position: fixed;
+    animation: flotter 4s infinite ease-in-out alternate;
+    z-index: -1; 
+    left: 50%; 
+    bottom: 20%; 
+    animation-delay: 0s;
+}
+.flottant6 {
+    position: fixed;
+    animation: flotter 4s infinite ease-in-out alternate;
+    z-index: -1; 
+    left: 40%; 
+    bottom: 70%; 
+    animation-delay: 0s;
+}
+.flottant7 {
+    position: fixed;
+    animation: flotter 4s infinite ease-in-out alternate;
+    z-index: -1; 
+    left: 30%; 
+    bottom: 40%; 
+    animation-delay: 0s;
+}
+.flottant8 {
+    position: fixed;
+    animation: flotter 4s infinite ease-in-out alternate;
+    z-index: -1; 
+    left: 20%; 
+    bottom: 50%; 
+    animation-delay: 0s;
+}
+.flottant9 {
+    position: fixed;
+    animation: flotter 4s infinite ease-in-out alternate;
+    z-index: -1; 
+    left: 10%; 
+    bottom: 0%; 
+    animation-delay: 0s;
+}
+.flottant10 {
+    position: fixed;
+    animation: flotter 4s infinite ease-in-out alternate;
+    z-index: -1; 
+    left: 0%; 
+    bottom: 70%; 
+    animation-delay: 0s;
+}
+.flottant11 {
+    position: fixed;
+    animation: flotter 4s infinite ease-in-out alternate;
+    z-index: -1; 
+    left: 0%; 
+    bottom: 20%; 
+    animation-delay: 0s;
+}
+.flottant12 {
+    position: fixed;
+    animation: flotter 4s infinite ease-in-out alternate;
+    z-index: -1; 
+    left: 50%; 
+    bottom: 0%; 
+    animation-delay: 0s;
+}
+@keyframes flotter {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-100%) rotate(15deg); 
+    }
+}
+
+/* premiere div */
+.debut{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.debut h1{
+    font-size: 2.1rem;
+}
+.debut span{
+    text-align: center;
+    width: 300px;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 25px;
+}
+.debut button{
+    background-color: black;
+    color: white;
+    outline: none;
+    border: 1px solid rgb(247, 32, 32);
+    width: 140px;
+    height: 50px;
+    border-radius: 50px;
+}
+.debut button:hover{
+    background-color: rgb(7, 7, 7);
+    /* opacity: 0.4; */
+}
+
+/* seconde div */
+.lettre{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+.lettre h2{
+    color: rgb(253, 44, 44);
+    font-size: 3.1rem;
+}
+.lettre span{
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+.lettre button{
+    background-color: rgb(247, 32, 32);
+    color: white;
+    border: none;
+    height: 35px;
+    border-radius: 10px;
+}
+.lettre button:hover{
+    background-color: rgb(243, 49, 49);
+}
+
+/* troisieme div */
+.futur{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.futur h2{
+    color: rgb(253, 44, 44);
+    font-size: 1.8rem;
+}
+.futur .photo{
+    width: 100%;
+    /* border: 1px solid white; */
+    display: grid;
+    gap: 50px;  
+    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+.futur .photo .contenu div{
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: rosybrown;
+    border: 1px solid white;
+}
+.futur .photo .contenu p{
+    color: rgb(243, 80, 80);
+}
+.futur button{
+    width: 70%;
+    background-color: rgb(247, 32, 32);
+    color: white;
+    border: none;
+    height: 35px;
+    border-radius: 10px;
+}
+.futur button:hover{
+    background-color: rgb(243, 49, 49);
+}
+/* quatrieme div */
+.raison{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.raison .raison_oui{
+    width: 100%;
+    /* border: 1px solid white; */
+    display: grid;
+    gap: 20px;  
+    grid-template-columns: repeat(2, 1fr);
+}
+.raison .raison_oui p{
+    text-align: center;
+    color: rgb(241, 71, 71);
+}
+
+.details{
+    border: 1px solid rgb(241, 71, 71);
+    padding: 5px 10px 8px 20px;
+    position: relative;
+    border-radius: 15px;
+}
+.details div{
+    background-color: rgb(241, 71, 71);
+    width: 1.5%;
+    height: 90%;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    border-radius: 15px;
+}
+.raison button{
+    width: 70%;
+    background-color: rgb(247, 32, 32);
+    color: white;
+    border: none;
+    height: 35px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.raison button:hover{
+    background-color: rgb(243, 49, 49);
+}
+
+/* Cinquieme div  */
+.promesse{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.promesse span {
+    text-align: center;
+}
+.promesse h2{
+    font-size: 3rem;
+    margin: 0;
+}
+.promesse button{
+    width: 70%;
+    background-color: rgb(247, 32, 32);
+    color: white;
+    border: none;
+    height: 35px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.promesse button:hover{
+    background-color: rgb(243, 49, 49);
+}
+
+/* Sixieme div */
+.feu{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.feu h2{
+    font-family: 'Alex Brush';
+    font-size: 5rem;
+}
+.feu button{
+    width: 70%;
+    background-color: rgb(247, 32, 32);
+    color: white;
+    border: none;
+    height: 35px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.feu button:hover{
+    background-color: rgb(243, 49, 49);
+}
+
+/* dernier div */
+.fin{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fin span{
+    text-align: center;
+}
+.fin a{
+    width: 70%;
+    background-color: rgb(247, 32, 32);
+    color: white;
+    border: none;
+    height: 35px;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+.fin a:hover{
+    background-color: rgb(243, 49, 49);
+}
+
+@media (max-width: 750px) {
+    .futur .photo .contenu div{
+    width: 170px;
+    height: 150px;
+    border-radius: 10px;
+}
+.raison .raison_oui{
+    width: 100%;
+    display: grid; 
+    grid-template-columns: repeat(1, 1fr);
+}
+.feu h2{
+    font-family: 'Alex Brush';
+    font-size: 3rem;
+}
+.fin h2{
+    font-size: 5rem;
+    margin: 0;
+}
+}
