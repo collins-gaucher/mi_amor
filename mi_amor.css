@@ -187,6 +187,7 @@ h1, h2{
 .lettre h2{
     color: rgb(253, 44, 44);
     font-size: 3.1rem;
+    margin: 0;
 }
 .lettre span{
     font-size: 0.9rem;
@@ -375,6 +376,13 @@ h1, h2{
 .raison .raison_oui{
     width: 100%;
     display: grid; 
+    grid-template-columns: repeat(1, 1fr);
+}
+    .futur .photo{
+    width: 100%;
+    /* border: 1px solid white; */
+    display: grid; 
+    text-align: center;
     grid-template-columns: repeat(1, 1fr);
 }
 .feu h2{
