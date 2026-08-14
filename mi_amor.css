@@ -383,7 +383,12 @@ h1, h2{
     /* border: 1px solid white; */
     display: grid; 
     text-align: center;
+    gap: 10px;
     grid-template-columns: repeat(1, 1fr);
+}
+    .futur .photo .contenu div{
+    width: 100%;
+    height: 250px;
 }
 .feu h2{
     font-family: 'Alex Brush';
